@@ -1,0 +1,13 @@
+<form>
+    <h1> Login Form </h1>
+            <div class="container">   
+                <label>UserId: </label>   
+                <input type="number"  placeholder="Enter Id" [(ngModel)]="dynamicNo" name="UserId" required><br><br>  
+                <label>Password : </label>   
+                <input type="password" placeholder="Enter Password" name="password" required><br><br>
+                <button (click)="btnclick()" [disabled]="isDisabled" type="submit">Login</button><br>
+            </div>   
+            <h3>UserId: {{dynamicNo}}</h3>
+</form>     
+
+    
